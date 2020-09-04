@@ -2,7 +2,7 @@ name: opmlparser
 description: A dart package for parsing OPML.
 version: 0.0.1
 author: Abhinav Marwaha
-homepage: 
+homepage: https://github.com/abhinavmarwaha/opmlparser
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
@@ -16,6 +16,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  http: ^0.12.2
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
