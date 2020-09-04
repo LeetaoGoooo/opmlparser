@@ -6,7 +6,7 @@ import 'package:opmlparser/util/datetime.dart';
 
 void main() {
   test('parse example.opml', () {
-    String opmlString = File('./xml/example.opml').readAsStringSync();
+    String opmlString = File('test/xml/example.opml').readAsStringSync();
 
     Opml opml = Opml.parse(opmlString);
 
