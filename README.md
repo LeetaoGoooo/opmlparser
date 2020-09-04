@@ -1,6 +1,10 @@
 # OPML Parser
 
+[![Build Status](https://travis-ci.org/abhinavmarwaha/opmlparser.svg?branch=master)](https://travis-ci.org/abhinavmarwaha/opmlparser)
+[![Pub](https://img.shields.io/pub/v/webfeed.svg)](https://pub.dartlang.org/packages/opmlparser)
+
 A dart package for parsing OPML.
+
 
 ### Installing
 
