@@ -32,9 +32,3 @@ Iterable<XmlElement> findElements(
     return null;
   }
 }
-
-bool parseBoolLiteral(XmlElement element, String tagName) {
-  var v = findFirstElement(element, tagName)?.text?.toLowerCase()?.trim();
-  if (v == null) return false;
-  return ['yes', 'true'].contains(v);
-}

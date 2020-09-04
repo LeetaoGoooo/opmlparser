@@ -1,4 +1,3 @@
-import 'package:opmlparser/util/xml.dart';
 import 'package:xml/xml.dart';
 
 class OpmlItem {
@@ -7,8 +6,8 @@ class OpmlItem {
   final String description;
   final String type;
   final String version;
-  final String xmlURL;
-  final String httpURL;
+  final String xmlUrl;
+  final String htmlUrl;
   final String language;
 
   OpmlItem(
@@ -17,19 +16,19 @@ class OpmlItem {
       this.description,
       this.type,
       this.version,
-      this.xmlURL,
-      this.httpURL,
+      this.xmlUrl,
+      this.htmlUrl,
       this.language});
 
-  factory OpmlItem.parse(XmlElement element) {
+  factory OpmlItem.parse(XmlNode element) {
     return OpmlItem(
-        title: findFirstElement(element, 'title')?.text,
-        text: findFirstElement(element, 'text')?.text,
-        description: findFirstElement(element, 'description')?.text,
-        type: findFirstElement(element, 'type')?.text,
-        version: findFirstElement(element, 'version')?.text,
-        xmlURL: findFirstElement(element, 'xmlURL')?.text,
-        httpURL: findFirstElement(element, 'httpURL')?.text,
-        language: findFirstElement(element, 'language')?.text);
+        title: element.getAttribute('title'),
+        text: element.getAttribute('text'),
+        description: element.getAttribute('description'),
+        type: element.getAttribute('type'),
+        version: element.getAttribute('version'),
+        xmlUrl: element.getAttribute('xmlUrl'),
+        htmlUrl: element.getAttribute('htmlUrl'),
+        language: element.getAttribute('language'));
   }
 }
