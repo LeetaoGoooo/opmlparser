@@ -1,8 +1,5 @@
 # OPML Parser
 
-[![Build Status](https://travis-ci.org/witochandra/webfeed.svg?branch=master)](https://travis-ci.org/witochandra/webfeed)
-[![Pub](https://img.shields.io/pub/v/webfeed.svg)](https://pub.dartlang.org/packages/webfeed)
-
 A dart package for parsing OPML.
 
 ### Installing
