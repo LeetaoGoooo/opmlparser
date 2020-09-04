@@ -2,6 +2,7 @@ import 'dart:core';
 
 import 'package:xml/xml.dart';
 
+// returns first element with [name] in [XmlNode]
 XmlElement findFirstElement(
   XmlNode node,
   String name, {
@@ -16,6 +17,7 @@ XmlElement findFirstElement(
   }
 }
 
+// returns all elements with [name] in [XmlNode]
 Iterable<XmlElement> findElements(
   XmlNode node,
   String name, {

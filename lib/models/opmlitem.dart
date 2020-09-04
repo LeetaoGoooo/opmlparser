@@ -1,5 +1,6 @@
 import 'package:xml/xml.dart';
 
+// item class for Opml i.e. the feed details
 class OpmlItem {
   final String title;
   final String text;
@@ -20,6 +21,7 @@ class OpmlItem {
       this.htmlUrl,
       this.language});
 
+  // parses [element] into a OpmlItem from its attributes
   factory OpmlItem.parse(XmlNode element) {
     return OpmlItem(
         title: element.getAttribute('title'),

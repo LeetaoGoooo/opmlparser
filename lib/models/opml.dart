@@ -3,6 +3,7 @@ import 'package:opmlparser/util/datetime.dart';
 import 'package:opmlparser/util/xml.dart';
 import 'package:xml/xml.dart';
 
+// Opml details class
 class Opml {
   final String title;
   final DateTime dateCreated;
@@ -17,7 +18,7 @@ class Opml {
   final String windowLeft;
   final String windowBottom;
   final String windowRight;
-
+  // list of [items] of feeds in the opml
   final List<OpmlItem> items;
 
   Opml(
@@ -36,6 +37,7 @@ class Opml {
       this.windowRight,
       this.items});
 
+// parses [opmlString] (xml doc) into Opml Object
   factory Opml.parse(String opmlString) {
     XmlDocument element = XmlDocument.parse(opmlString);
     XmlNode opml = findFirstElement(element, 'opml');
