@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:flutter_test/flutter_test.dart';
+import 'package:test/test.dart';
 import 'package:opmlparser/opmlparser.dart';
 import 'package:opmlparser/util/datetime.dart';
 

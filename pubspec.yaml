@@ -1,29 +1,43 @@
 name: opmlparser
-description: A dart package for parsing OPML.
 version: 0.0.1
 author: Abhinav Marwaha
+description: A dart package for parsing OPML.
 homepage: https://github.com/abhinavmarwaha/opmlparser
-
 environment:
   sdk: ">=2.7.0 <3.0.0"
-  flutter: ">=1.17.0 <2.0.0"
-
 dependencies:
-  flutter:
-    sdk: flutter
-  xml: ^4.2.0
-  intl: ^0.16.1
-
+  xml: "^4.2.0"
+  intl: "^0.16.1"
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
+  test: ^1.3.0
   http: ^0.12.2
+
+# name: opmlparser
+# description: A dart package for parsing OPML.
+# version: 0.0.1
+# author: Abhinav Marwaha
+# homepage: https://github.com/abhinavmarwaha/opmlparser
+
+# environment:
+#   sdk: ">=2.7.0 <3.0.0"
+#   flutter: ">=1.17.0 <2.0.0"
+
+# dependencies:
+#   flutter:
+#     sdk: flutter
+#   xml: ^4.2.0
+#   intl: ^0.16.1
+
+# dev_dependencies:
+#   flutter_test:
+#     sdk: flutter
+#   http: ^0.12.2
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter.
-flutter:
+# flutter:
 
   # To add assets to your package, add an assets section, like this:
   # assets:
